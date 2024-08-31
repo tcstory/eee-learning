@@ -2,6 +2,7 @@
 
 # 网址列表
 urls=(
+  "https://www.eee-learning.com/article/4451"
   "https://www.eee-learning.com/article/3682"
   "https://www.eee-learning.com/article/3688"
   "https://www.eee-learning.com/article/3694"
@@ -73,5 +74,5 @@ urls=(
 
 # 下载每个网址
 for url in "${urls[@]}"; do
-  wget -p -np -k "$url"
+  wget --page-requisites --adjust-extension --convert-links -nd -nc "$url"
 done
