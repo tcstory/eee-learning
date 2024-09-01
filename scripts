@@ -1,0 +1,2 @@
+<script\b[^>]*>([\s\S]*?)<\/script>
+(jpg|png|svg|gif|ico)%3f[a-zA-Z0-9-_=]*
